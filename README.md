@@ -1,6 +1,6 @@
 # hexo-optimize
 
-[![travis-image]][travis-url]
+[![Build Status][github-image]][github-url]
 [![npm-image]][npm-url]
 [![lic-image]](LICENSE)
 
@@ -71,13 +71,13 @@ Here is a [result](https://gtmetrix.com/compare/Z7BnLaPX/qSMKtzBY) from [GTmetri
 
 ![Comparison](https://user-images.githubusercontent.com/980449/35233293-a8229c72-ffd8-11e7-8a23-3b8bc10d40c3.png)
 
-[travis-image]: https://img.shields.io/travis/theme-next/hexo-optimize/master.svg?style=flat-square
+[github-image]: https://img.shields.io/github/workflow/status/next-theme/hexo-optimize/Linter?label=test&logo=github&style=flat-square
 [npm-image]: https://img.shields.io/npm/v/hexo-optimize.svg?style=flat-square
 [lic-image]: https://img.shields.io/npm/l/hexo-optimize?style=flat-square
 
-[size-image]: https://img.shields.io/github/languages/code-size/theme-next/hexo-optimize?style=flat-square
+[size-image]: https://img.shields.io/github/languages/code-size/next-theme/hexo-optimize?style=flat-square
 [dm-image]: https://img.shields.io/npm/dm/hexo-optimize?style=flat-square
 [dt-image]: https://img.shields.io/npm/dt/hexo-optimize?style=flat-square
 
-[travis-url]: https://travis-ci.org/theme-next/hexo-optimize
+[github-url]: https://github.com/next-theme/hexo-optimize/actions?query=workflow%3ALinter
 [npm-url]: https://www.npmjs.com/package/hexo-optimize

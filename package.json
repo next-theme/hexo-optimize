@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theme-next/hexo-optimize.git"
+    "url": "git+https://github.com/next-theme/hexo-optimize.git"
   },
   "keywords": [
     "hexo",
@@ -19,9 +19,9 @@
   "author": "Tsanie Lily",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/theme-next/hexo-optimize/issues"
+    "url": "https://github.com/next-theme/hexo-optimize/issues"
   },
-  "homepage": "https://github.com/theme-next/hexo-optimize#readme",
+  "homepage": "https://github.com/next-theme/hexo-optimize#readme",
   "dependencies": {
     "bluebird": "^3.7.2",
     "csso": "^4.0.3",
