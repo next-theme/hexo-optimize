@@ -1,4 +1,4 @@
-# hexo-filter-optimize
+# hexo-optimize
 
 [![travis-image]][travis-url]
 [![npm-image]][npm-url]
@@ -21,7 +21,7 @@ It will improve your pages loading and get a higher score in the [Google PageSpe
 [![dt-image]][npm-url]
 
 ```bash
-npm install hexo-filter-optimize
+npm install hexo-optimize
 ```
 
 ## Usage
@@ -71,13 +71,13 @@ Here is a [result](https://gtmetrix.com/compare/Z7BnLaPX/qSMKtzBY) from [GTmetri
 
 ![Comparison](https://user-images.githubusercontent.com/980449/35233293-a8229c72-ffd8-11e7-8a23-3b8bc10d40c3.png)
 
-[travis-image]: https://img.shields.io/travis/theme-next/hexo-filter-optimize/master.svg?style=flat-square
-[npm-image]: https://img.shields.io/npm/v/hexo-filter-optimize.svg?style=flat-square
-[lic-image]: https://img.shields.io/npm/l/hexo-filter-optimize?style=flat-square
+[travis-image]: https://img.shields.io/travis/theme-next/hexo-optimize/master.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/hexo-optimize.svg?style=flat-square
+[lic-image]: https://img.shields.io/npm/l/hexo-optimize?style=flat-square
 
-[size-image]: https://img.shields.io/github/languages/code-size/theme-next/hexo-filter-optimize?style=flat-square
-[dm-image]: https://img.shields.io/npm/dm/hexo-filter-optimize?style=flat-square
-[dt-image]: https://img.shields.io/npm/dt/hexo-filter-optimize?style=flat-square
+[size-image]: https://img.shields.io/github/languages/code-size/theme-next/hexo-optimize?style=flat-square
+[dm-image]: https://img.shields.io/npm/dm/hexo-optimize?style=flat-square
+[dt-image]: https://img.shields.io/npm/dt/hexo-optimize?style=flat-square
 
-[travis-url]: https://travis-ci.org/theme-next/hexo-filter-optimize
-[npm-url]: https://www.npmjs.com/package/hexo-filter-optimize
+[travis-url]: https://travis-ci.org/theme-next/hexo-optimize
+[npm-url]: https://www.npmjs.com/package/hexo-optimize

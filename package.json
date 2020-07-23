@@ -1,6 +1,6 @@
 {
-  "name": "hexo-filter-optimize",
-  "version": "0.3.1",
+  "name": "hexo-optimize",
+  "version": "2.5.0",
   "description": "A hexo plugin that optimize the pages loading speed.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theme-next/hexo-filter-optimize.git"
+    "url": "git+https://github.com/theme-next/hexo-optimize.git"
   },
   "keywords": [
     "hexo",
@@ -19,18 +19,18 @@
   "author": "Tsanie Lily",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/theme-next/hexo-filter-optimize/issues"
+    "url": "https://github.com/theme-next/hexo-optimize/issues"
   },
-  "homepage": "https://github.com/theme-next/hexo-filter-optimize#readme",
+  "homepage": "https://github.com/theme-next/hexo-optimize#readme",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "csso": "^4.0.2",
-    "jsdom": "^16.2.1",
+    "csso": "^4.0.3",
+    "jsdom": "^16.3.0",
     "micromatch": "^4.0.2",
-    "terser": "^4.6.7"
+    "terser": "^4.8.0"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-theme-next": "^1.1.4"
+    "eslint": "^7.5.0",
+    "eslint-config-theme-next": "^1.2.1"
   }
 }
