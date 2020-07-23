@@ -71,7 +71,7 @@ Here is a [result](https://gtmetrix.com/compare/Z7BnLaPX/qSMKtzBY) from [GTmetri
 
 ![Comparison](https://user-images.githubusercontent.com/980449/35233293-a8229c72-ffd8-11e7-8a23-3b8bc10d40c3.png)
 
-[github-image]: https://img.shields.io/github/workflow/status/next-theme/hexo-optimize/Linter?label=test&logo=github&style=flat-square
+[github-image]: https://img.shields.io/github/workflow/status/next-theme/hexo-optimize/Linter?style=flat-square
 [npm-image]: https://img.shields.io/npm/v/hexo-optimize.svg?style=flat-square
 [lic-image]: https://img.shields.io/npm/l/hexo-optimize?style=flat-square
 

@@ -18,17 +18,17 @@ var config = hexo.config.filter_optimize = Object.assign({
     excludes: []
   },
   image: {
-    minify: true,
-    interlaced: false,
-    multipass: false,
+    minify           : true,
+    interlaced       : false,
+    multipass        : false,
     optimizationLevel: 2,
-    pngquant: false,
-    progressive: false
+    pngquant         : false,
+    progressive      : false
   }
 }, hexo.config.filter_optimize);
 
 if (process.env.NODE_ENV !== 'development' && config.enable) {
-  const { filter, css, js, image } = require('./lib/index');
+  const { filter, css, js } = require('./lib/index');
   const priority = parseInt(config.priority, 10) || 10;
 
   // Enable one of the optimizations.
