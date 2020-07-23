@@ -30,7 +30,7 @@
     "terser": "^4.8.0"
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-theme-next": "^1.2.1"
+    "eslint": "7.5.0",
+    "eslint-config-theme-next": "1.2.1"
   }
 }
