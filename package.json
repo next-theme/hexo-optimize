@@ -27,7 +27,7 @@
     "csso": "^4.0.3",
     "jsdom": "^16.3.0",
     "micromatch": "^4.0.2",
-    "terser": "^4.8.0"
+    "terser": "^5.0.0"
   },
   "devDependencies": {
     "@next-theme/eslint-config": "0.0.1",
