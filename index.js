@@ -2,7 +2,7 @@
 
 'use strict';
 
-var config = hexo.config.filter_optimize = Object.assign({
+hexo.config.filter_optimize = Object.assign({
   enable         : true,
   remove_comments: false,
   css            : {
@@ -27,6 +27,7 @@ var config = hexo.config.filter_optimize = Object.assign({
   }
 }, hexo.config.filter_optimize);
 
+const config = hexo.config.filter_optimize;
 if (process.env.NODE_ENV !== 'development' && config.enable) {
   const { filter, css, js } = require('./lib/index');
   const priority = parseInt(config.priority, 10) || 10;
