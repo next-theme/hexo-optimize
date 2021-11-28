@@ -21,7 +21,7 @@
   "homepage": "https://github.com/next-theme/hexo-optimize#readme",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "csso": "^4.2.0",
+    "clean-css": "^5.2.2",
     "jsdom": "^16.4.0",
     "micromatch": "^4.0.2",
     "terser": "^5.5.1"
