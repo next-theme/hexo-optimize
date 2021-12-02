@@ -22,7 +22,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "clean-css": "^5.2.2",
-    "jsdom": "^18.0.0",
+    "jsdom": "^19.0.0",
     "micromatch": "^4.0.2",
     "terser": "^5.5.1"
   },
