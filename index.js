@@ -3,19 +3,15 @@
 'use strict';
 
 hexo.config.filter_optimize = Object.assign({
-  enable         : true,
-  remove_comments: false,
-  css            : {
+  enable: true,
+  css   : {
     minify  : true,
-    bundle  : true,
-    delivery: true,
-    inlines : ['css/main.css'],
-    excludes: []
+    delivery: [],
+    inlines : []
   },
   js: {
-    minify  : true,
-    bundle  : true,
-    excludes: []
+    minify         : true,
+    remove_comments: false
   },
   image: {
     minify           : true,
@@ -33,7 +29,7 @@ if (process.env.NODE_ENV !== 'development' && config.enable) {
   const priority = parseInt(config.priority, 10) || 10;
 
   // Enable one of the optimizations.
-  if (config.css.bundle || config.js.bundle) {
+  if (config.css.delivery.length || config.css.inlines.length) {
     hexo.extend.filter.register('after_generate', filter, priority);
   }
   if (config.css.minify) {
