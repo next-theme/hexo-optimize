@@ -6,11 +6,13 @@ hexo.config.filter_optimize = Object.assign({
   enable: true,
   css   : {
     minify  : true,
+    excludes: [],
     delivery: [],
     inlines : []
   },
   js: {
     minify         : true,
+    excludes       : [],
     remove_comments: false
   },
   image: {

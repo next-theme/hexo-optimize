@@ -6,13 +6,11 @@
 
 A hexo plugin that optimize the pages loading speed.
 
-It will auto filter your html file, find the `<link rel="stylesheet">` block and replace them into a javascript to [optimize CSS delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery).
+It will automatically filter your html file, find the `<link rel="stylesheet">` tag and make optimizations on demand, for example:
+- Inline the `main.css` into the html page, to speed up your site's First Contentful Paint. (Useful when HTTP/2 Server Push is not available on your web server)
+- Load CSS asynchronously or deferred.
 
-And inline the `main.css` into the html page like [@maple3142 does](https://github.com/maple3142/Blog/blob/master/gulpfile.js).
-
-It will improve your pages loading and get a higher score in the [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
-
-**Known Issues:** This plugin may cause Font Awesome and PJAX to fail to load.
+It will help you get a higher score in the [Google PageSpeed Insights](https://pagespeed.web.dev).
 
 ## Installation
 
@@ -30,26 +28,24 @@ Activate the plugin in hexo's `_config.yml` like this:
 ```yml
 filter_optimize:
   enable: true
-  # remove the surrounding comments in each of the bundled files
-  remove_comments: false
   css:
     # minify all css files
     minify: true
-    # bundle loaded css files into one
-    bundle: true
-    # use a script block to load css elements dynamically
-    delivery: true
-    # make specific css content inline into the html page
-    #   - only support the full path
-    #   - default is ['css/main.css']
-    inlines:
     excludes:
+    # use preload to load css elements dynamically
+    delivery:
+      - '@fortawesome/fontawesome-free'
+      - 'fonts.googleapis.com'
+    # make specific css content inline into the html page
+    inlines:
+      # support full path only
+      - css/main.css
   js:
     # minify all js files
     minify: true
-    # bundle loaded js files into one
-    bundle: true
     excludes:
+    # remove the comments in each of the js files
+    remove_comments: false
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12
