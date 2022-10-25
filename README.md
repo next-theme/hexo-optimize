@@ -47,7 +47,7 @@ filter_optimize:
     # remove the comments in each of the js files
     remove_comments: false
   html:
-    # minify all js files
+    # minify all html files
     minify: true
     excludes:
   # set the priority of this plugin,
