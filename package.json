@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/next-theme/hexo-optimize#readme",
   "dependencies": {
+    "@minify-html/node": "^0.10.2",
     "bluebird": "^3.7.2",
     "clean-css": "^5.2.2",
     "micromatch": "^4.0.2",
