@@ -15,6 +15,10 @@ hexo.config.filter_optimize = Object.assign({
     excludes       : [],
     remove_comments: false
   },
+  html: {
+    minify  : true,
+    excludes: []
+  },
   image: {
     minify           : true,
     interlaced       : false,
