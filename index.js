@@ -35,7 +35,7 @@ if (process.env.NODE_ENV !== 'development' && config.enable) {
   const priority = parseInt(config.priority, 10) || 10;
 
   // Enable one of the optimizations.
-  if (config.css.delivery.length || config.css.inlines.length) {
+  if (config.css.delivery.length || config.css.inlines.length || config.html.minify) {
     hexo.extend.filter.register('after_generate', filter, priority);
   }
   if (config.css.minify) {
