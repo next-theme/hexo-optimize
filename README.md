@@ -46,6 +46,10 @@ filter_optimize:
     excludes:
     # remove the comments in each of the js files
     remove_comments: false
+  html:
+    # minify all js files
+    minify: true
+    excludes:
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12
@@ -58,7 +62,7 @@ export NODE_ENV=development
 
 ## Comparison
 
-Here is a [result](https://gtmetrix.com/compare/Z7BnLaPX/qSMKtzBY) from [GTmetrix](https://gtmetrix.com) to show you the changes between before and after. (Same web server located in Tokyo, Japan, vultr.com)
+Here is a result from [GTmetrix](https://gtmetrix.com) to show you the changes between before and after. (Same web server located in Tokyo, Japan, vultr.com)
 
 * **Remove query strings from static resources** - let all the proxies could cache resources well. (https://gtmetrix.com/remove-query-strings-from-static-resources.html)
 * **Make fewer HTTP requests** - through combined the loaded js files into the one.
