@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@next-theme/eslint-config": "0.0.3",
-    "eslint": "8.26.0"
+    "eslint": "8.26.0",
+    "lighthouse": "^9.6.7"
   }
 }
