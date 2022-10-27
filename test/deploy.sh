@@ -45,22 +45,13 @@ echo " ${lgreen}Installing Hexo & NPM modules...${norm}"
 echo "=============================================================="
     git clone https://github.com/hexojs/hexo-theme-unit-test tmp
     cd tmp
-    git restore _config.yml
     npm install --silent
     npm install hexo-theme-next hexo-optimize
 
 echo
 echo "=============================================================="
-echo " ${yellow}Checking Hexo version...${norm}"
+echo " ${lgreen}Edit config file...${norm}"
 echo "=============================================================="
-    hexo() {
-        npx hexo "$@"
-    }
-    hexo -v
-    npm ls --depth 0
-    hexo config theme next
-    hexo config theme_config.motion.enable false
-    hexo config theme_config.font.enable true
     echo "
 filter_optimize:
   enable: true
@@ -89,13 +80,26 @@ filter_optimize:
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12" >> _config.yml
-  cp _config.yml _config.yml.bak
+
+echo
+echo "=============================================================="
+echo " ${yellow}Checking Hexo version...${norm}"
+echo "=============================================================="
+    hexo() {
+        npx hexo "$@"
+    }
+    hexo -v
+    npm ls --depth 0
+    hexo config theme next
+    hexo config theme_config.motion.enable false
+    hexo config theme_config.font.enable true
+    cp _config.yml _config.yml.bak
 
 echo
 echo "=============================================================="
 echo " ${lpurple}Generating content for All Optimization...${norm}"
 echo "=============================================================="
-    hexo config url https://hexo-optimize.pages.dev/all
+    hexo config url https://hexo-optimize.netlify.app/all
     hexo clean && hexo g
 
     echo "${lred}`mv -v public all`${norm}"
@@ -104,7 +108,7 @@ echo
 echo "=============================================================="
 echo " ${lpurple}Generating content for CSS Delivery...${norm}"
 echo "=============================================================="
-    hexo config url https://hexo-optimize.pages.dev/delivery
+    hexo config url https://hexo-optimize.netlify.app/delivery
     hexo config filter_optimize.css.inlines null
     sed -i 's/inlines: null//g' _config.yml
     hexo clean && hexo g
@@ -113,10 +117,10 @@ echo "=============================================================="
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Prepairing content for CSS Inlines...${norm}"
+echo " ${lpurple}Generating content for CSS Inlines...${norm}"
 echo "=============================================================="
     cp _config.yml.bak _config.yml
-    hexo config url https://hexo-optimize.pages.dev/inlines
+    hexo config url https://hexo-optimize.netlify.app/inlines
     hexo config filter_optimize.css.delivery null
     sed -i 's/delivery: null//g' _config.yml
     hexo clean && hexo g
@@ -127,7 +131,7 @@ echo
 echo "=============================================================="
 echo " ${lpurple}Generating content for None Optimization...${norm}"
 echo "=============================================================="
-    hexo config url https://hexo-optimize.pages.dev/none
+    hexo config url https://hexo-optimize.netlify.app/none
     hexo config filter_optimize.css.inlines null
     sed -i 's/inlines: null//g' _config.yml
     hexo clean && hexo g
@@ -144,7 +148,7 @@ echo "=============================================================="
     echo "${yellow}robots.txt:${norm}"
     echo "User-agent: *
 Disallow: /*
-Host: https://hexo-optimize.pages.dev" > public/robots.txt
+Host: https://hexo-optimize.netlify.app" > public/robots.txt
     cat public/robots.txt
 
 echo
