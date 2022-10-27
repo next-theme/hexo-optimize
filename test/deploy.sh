@@ -54,7 +54,7 @@ echo "=============================================================="
 echo " ${yellow}Checking Hexo version...${norm}"
 echo "=============================================================="
     hexo() {
-        npx hexo "$@" --silent
+        npx hexo "$@"
     }
     hexo -v
     npm ls --depth 0
