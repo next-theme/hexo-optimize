@@ -52,6 +52,7 @@ echo
 echo "=============================================================="
 echo " ${lgreen}Edit config file...${norm}"
 echo "=============================================================="
+    git restore _config.yml
     echo "
 filter_optimize:
   enable: true
