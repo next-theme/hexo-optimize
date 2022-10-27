@@ -2,7 +2,9 @@
 
 'use strict';
 
-hexo.config.filter_optimize = Object.assign({
+const { deepMerge } = require('hexo-util');
+
+hexo.config.filter_optimize = deepMerge({
   enable: true,
   css   : {
     minify  : true,
