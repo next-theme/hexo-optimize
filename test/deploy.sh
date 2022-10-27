@@ -43,9 +43,8 @@ echo
 echo "=============================================================="
 echo " ${lgreen}Installing Hexo & NPM modules...${norm}"
 echo "=============================================================="
-    git clone https://github.com/hexojs/hexo-starter tmp
+    git clone https://github.com/hexojs/hexo-theme-unit-test tmp
     cd tmp
-    git submodule add https://github.com/SukkaLab/hexo-many-posts source/_posts/hexo-many-posts
     git restore _config.yml
     npm install --silent
     npm install hexo-theme-next hexo-optimize
