@@ -1,6 +1,6 @@
 {
   "name": "hexo-optimize",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "A hexo plugin that optimize the pages loading speed.",
   "main": "index.js",
   "files": [
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/next-theme/hexo-optimize#readme",
   "dependencies": {
-    "@minify-html/node": "^0.10.2",
+    "@minify-html/node": "^0.10.3",
     "bluebird": "^3.7.2",
-    "clean-css": "^5.2.2",
-    "micromatch": "^4.0.2",
+    "clean-css": "^5.3.1",
+    "micromatch": "^4.0.5",
     "terser": "^5.15.1"
   },
   "devDependencies": {
