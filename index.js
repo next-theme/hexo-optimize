@@ -5,8 +5,9 @@
 const { deepMerge } = require('hexo-util');
 
 hexo.config.filter_optimize = deepMerge({
-  enable: true,
-  css   : {
+  enable    : true,
+  versioning: false,
+  css       : {
     minify  : true,
     excludes: [],
     delivery: [],
@@ -37,7 +38,7 @@ if (process.env.NODE_ENV !== 'development' && config.enable) {
   const priority = parseInt(config.priority, 10) || 10;
 
   // Enable one of the optimizations.
-  if (config.css.delivery.length || config.css.inlines.length || config.html.minify) {
+  if (config.css.delivery.length || config.css.inlines.length || config.html.minify || config.versioning) {
     hexo.extend.filter.register('after_generate', filter, priority);
   }
   if (config.css.minify) {

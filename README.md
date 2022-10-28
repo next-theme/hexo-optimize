@@ -28,6 +28,8 @@ Activate the plugin in hexo's `_config.yml` like this:
 ```yml
 filter_optimize:
   enable: true
+  # static resource versioning
+  versioning: false
   css:
     # minify all css files
     minify: true
