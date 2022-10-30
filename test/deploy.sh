@@ -43,8 +43,9 @@ echo
 echo "=============================================================="
 echo " ${lgreen}Installing Hexo & NPM modules...${norm}"
 echo "=============================================================="
-    git clone https://github.com/hexojs/hexo-theme-unit-test tmp
-    cd tmp
+    rm -rf .tmp-hexo-optimize-test
+    git clone https://github.com/hexojs/hexo-theme-unit-test .tmp-hexo-optimize-test
+    cd .tmp-hexo-optimize-test
     npm install --silent
     npm install hexo-theme-next hexo-optimize
 
@@ -52,7 +53,6 @@ echo
 echo "=============================================================="
 echo " ${lgreen}Edit config file...${norm}"
 echo "=============================================================="
-    git restore _config.yml
     echo "
 filter_optimize:
   enable: true
@@ -151,6 +151,7 @@ echo "=============================================================="
 Disallow: /*
 Host: https://hexo-optimize.netlify.app" > public/robots.txt
     cat public/robots.txt
+    mv public ../
 
 echo
 echo "=============================================================="
@@ -164,7 +165,7 @@ echo
 echo "=============================================================="
 echo " ${yellow}Checking 'public' directory structure...${norm}"
 echo "=============================================================="
-    cd public
+    cd ../public
     echo "${lcyan}`pwd`${norm}"
     du -sh
     du -sh *
