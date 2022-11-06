@@ -4,11 +4,17 @@
   "description": "A hexo plugin that optimize the pages loading speed.",
   "main": "index.js",
   "files": [
+    "src/**",
+    "Cargo.toml",
     "lib",
-    "index.js"
+    "index.js",
+    "postinstall.js"
   ],
   "scripts": {
-    "lint": "eslint ."
+    "build": "cargo-cp-artifact --artifact cdylib html-minify index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-release": "npm run build -- --release",
+    "lint": "eslint .",
+    "postinstall": "node postinstall.js"
   },
   "repository": "next-theme/hexo-optimize",
   "keywords": [
@@ -24,8 +30,8 @@
   },
   "homepage": "https://github.com/next-theme/hexo-optimize#readme",
   "dependencies": {
-    "@minify-html/node": "^0.10.3",
     "bluebird": "^3.7.2",
+    "cargo-cp-artifact": "^0.1",
     "clean-css": "^5.3.1",
     "micromatch": "^4.0.5",
     "terser": "^5.15.1"
