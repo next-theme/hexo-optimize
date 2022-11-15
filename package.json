@@ -1,6 +1,6 @@
 {
   "name": "hexo-optimize",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "A hexo plugin that optimize the pages loading speed.",
   "main": "index.js",
   "files": [
