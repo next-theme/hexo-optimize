@@ -32,7 +32,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "cargo-cp-artifact": "^0.1",
-    "clean-css": "^5.3.1",
+    "lightningcss": "^1.16.1",
     "micromatch": "^4.0.5",
     "terser": "^5.15.1"
   },
