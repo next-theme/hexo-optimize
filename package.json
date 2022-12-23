@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cargo-cp-artifact --artifact cdylib html-minify index.node -- cargo build --message-format=json-render-diagnostics",
     "build-release": "npm run build -- --release",
-    "lint": "eslint .",
+    "lint": "eslint index.js lib",
     "postinstall": "node postinstall.js"
   },
   "repository": "next-theme/hexo-optimize",
