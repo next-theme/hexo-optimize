@@ -13,6 +13,6 @@ crate-type = ["cdylib"]
 minify-html = "0.10.8"
 
 [dependencies.neon]
-version = "0.10"
+version = "1"
 default-features = false
-features = ["napi-1"]
+features = ["napi-1", "external-buffers"]
