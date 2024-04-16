@@ -32,13 +32,14 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "cargo-cp-artifact": "^0.1",
-    "lightningcss": "^1.16.1",
+    "lightningcss": "^1.24.1",
     "micromatch": "^4.0.5",
-    "terser": "^5.15.1"
+    "terser": "^5.30.3"
   },
   "devDependencies": {
     "@next-theme/eslint-config": "0.0.3",
-    "eslint": "8.27.0",
+    "aws-sdk": "^2.1599.0",
+    "eslint": "8.57.0",
     "lighthouse": "^9.6.7"
   }
 }
