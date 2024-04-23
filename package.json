@@ -40,6 +40,6 @@
     "@next-theme/eslint-config": "0.0.3",
     "aws-sdk": "^2.1599.0",
     "eslint": "8.57.0",
-    "lighthouse": "^9.6.7"
+    "lighthouse": "^12.0.0"
   }
 }
