@@ -13,7 +13,10 @@
   "scripts": {
     "lint": "eslint index.js lib"
   },
-  "repository": "next-theme/hexo-optimize",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/next-theme/hexo-optimize.git"
+  },
   "keywords": [
     "hexo",
     "NexT",
