@@ -4,11 +4,11 @@
 [![npm-image]][npm-url]
 [![lic-image]](LICENSE)
 
-A hexo plugin that optimize the pages loading speed.
+A hexo plugin that optimize the pages loading speed. It will automatically filter your blog files and make optimizations. For example:
 
-It will automatically filter your html file, find the `<link rel="stylesheet">` tag and make optimizations on demand, for example:
-- Inline the `main.css` into the html page, to speed up your site's First Contentful Paint. (Useful when HTTP/2 Server Push is not available on your web server)
-- Load CSS asynchronously or deferred.
+- Minify CSS, JS and HTML files
+- Inline specific CSS files (like `main.css`) directly into the html page to improve First Contentful Paint performance
+- Add content hash to static resource filenames (versioning) for better cache control
 
 It will help you get a higher score in the [Google PageSpeed Insights](https://pagespeed.web.dev).
 
