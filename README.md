@@ -52,6 +52,8 @@ filter_optimize:
     # minify all html files
     minify: true
     excludes:
+    # options passed to @minify-html/node
+    options: {}
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12
@@ -60,6 +62,21 @@ filter_optimize:
 This plugin can be disabled by `NODE_ENV` in development to boost `hexo generate`:
 ```
 export NODE_ENV=development
+```
+
+### HTML minifier options
+
+All [`@minify-html/node` options](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html) can be configured under `filter_optimize.html.options` using their snake_case names.
+
+For example, preserve explicit `<html>` and `<head>` opening tags and all closing tags while keeping HTML minification enabled:
+
+```yml
+filter_optimize:
+  html:
+    minify: true
+    options:
+      keep_html_and_head_opening_tags: true
+      keep_closing_tags: true
 ```
 
 ## Comparison
