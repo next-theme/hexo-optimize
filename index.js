@@ -20,7 +20,8 @@ hexo.config.filter_optimize = deepMerge({
   },
   html: {
     minify  : true,
-    excludes: []
+    excludes: [],
+    options : {}
   },
   image: {
     minify           : true,
